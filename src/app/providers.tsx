@@ -15,11 +15,7 @@ type Props = {
 }
 
 export default async function Providers({ children, ...props }: Props) {
-
   const session = await auth()
-  
-
-  if (!session?.user) await signIn()
   
   return (
     <MantineProvider theme={theme}>

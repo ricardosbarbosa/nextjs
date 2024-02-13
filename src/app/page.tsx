@@ -11,7 +11,7 @@ export default function Home() {
       
       <Welcome />
       <ColorSchemeToggle />
-      <Client />
+      
       <form
         action={async () => {
           "use server"
