@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-import { ColorSchemeScript, MantineProvider } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 
 // core styles are required for all packages
-import '@mantine/core/styles.css';
 import { cn } from "@/lib/utils";
+import '@mantine/core/styles.css';
 import { theme } from "./theme";
 
 // other css files are required only if
