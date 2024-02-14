@@ -1,67 +1,69 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 export default {
   content: [
     './src/**/*.{html,js}',
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   presets: [],
   darkMode: "media", // or 'class'
+  plugins: [require('@tailwindcss/forms')],
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          // black and white
-          100: "#ffffff",
-          200: "#f5f5f5",
-          300: "#e0e0e0",
-          400: "#b3b3b3",
-          500: "#808080",
-          600: "#666666",
-          700: "#4d4d4d",
-          800: "#333333",
-          900: "#1a1a1a",
-        },
-        secondary: {
-          // white and black
-          100: "#1a1a1a",
-          200: "#333333",
-          300: "#4d4d4d",
-          400: "#666666",
-          500: "#808080",
-          600: "#b3b3b3",
-          700: "#e0e0e0",
-          800: "#f5f5f5",
-          900: "#ffffff",
-        },
-        tertiary: {
-          100: "#f0f4ff",
-          200: "#d9e3ff",
-          300: "#a6c1ff",
-          400: "#598bff",
-          500: "#3366ff",
-          600: "#274bdb",
-          700: "#1a34b8",
-          800: "#102694",
-          900: "#091a7a",
-        },
-        accent: {
-          // orange
-          100: "#fff5eb",
-          200: "#ffe0cc",
-          300: "#ffb366",
-          400: "#ff8533",
-          500: "#ff6600",
-          600: "#e65c00",
-          700: "#cc5200",
-          800: "#b34700",
-          900: "#993d00",
-        },
-      },
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        serif: ["Merriweather", "serif"],
-      },
-    },
+    // extend: {
+    //   colors: {
+    //     primary: {
+    //       // black and white
+    //       100: "#ffffff",
+    //       200: "#f5f5f5",
+    //       300: "#e0e0e0",
+    //       400: "#b3b3b3",
+    //       500: "#808080",
+    //       600: "#666666",
+    //       700: "#4d4d4d",
+    //       800: "#333333",
+    //       900: "#1a1a1a",
+    //     },
+    //     secondary: {
+    //       // white and black
+    //       100: "#1a1a1a",
+    //       200: "#333333",
+    //       300: "#4d4d4d",
+    //       400: "#666666",
+    //       500: "#808080",
+    //       600: "#b3b3b3",
+    //       700: "#e0e0e0",
+    //       800: "#f5f5f5",
+    //       900: "#ffffff",
+    //     },
+    //     tertiary: {
+    //       100: "#f0f4ff",
+    //       200: "#d9e3ff",
+    //       300: "#a6c1ff",
+    //       400: "#598bff",
+    //       500: "#3366ff",
+    //       600: "#274bdb",
+    //       700: "#1a34b8",
+    //       800: "#102694",
+    //       900: "#091a7a",
+    //     },
+    //     accent: {
+    //       // orange
+    //       100: "#fff5eb",
+    //       200: "#ffe0cc",
+    //       300: "#ffb366",
+    //       400: "#ff8533",
+    //       500: "#ff6600",
+    //       600: "#e65c00",
+    //       700: "#cc5200",
+    //       800: "#b34700",
+    //       900: "#993d00",
+    //     },
+    //   },
+    //   fontFamily: {
+    //     sans: ["Inter", "sans-serif"],
+    //     serif: ["Merriweather", "serif"],
+    //   },
+    // },
     accentColor: ({ theme }) => ({
       ...theme("colors"),
       auto: "auto",
@@ -1130,5 +1132,5 @@ export default {
       50: "50",
     },
   },
-  plugins: [],
+  
 } satisfies Config;

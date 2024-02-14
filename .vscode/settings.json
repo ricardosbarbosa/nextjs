@@ -1,0 +1,20 @@
+{
+  "editor.formatOnSave": true,
+  
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "always",
+    
+    "source.organizeImports": "explicit",
+    // For ESLint
+    "source.fixAll.eslint": "explicit",
+    // For TSLint
+    "source.fixAll.tslint": "explicit",
+    // For Stylelint
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true
+}

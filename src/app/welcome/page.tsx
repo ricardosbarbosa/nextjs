@@ -2,7 +2,6 @@ import { signOut } from "@/auth";
 import { ColorSchemeToggle } from "@/components/ColorSchemeToggle/ColorSchemeToggle";
 import { Welcome } from "@/components/Welcome/welcome";
 import { Button } from "@mantine/core";
-import Client from "./client";
 
 
 export default function Home() {
